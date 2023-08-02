@@ -477,6 +477,8 @@ body {
 
 .footer__copyright {
     font-weight: 300;
+    font-size: .8rem;
+    margin-top: 8px;
 }
 
 .footer__icons {

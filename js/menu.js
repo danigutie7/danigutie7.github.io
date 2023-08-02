@@ -11,3 +11,15 @@
         menu.classList.remove("nav__link--show");
     });
 })();
+
+
+$(document).ready(function() {
+    $(".nav__links, .cta, .cta__knowledge").on("click", function(event) {
+      event.preventDefault();
+      var target = $(this).attr("href");
+      var distance = $(target).offset().top;
+      $("html, body").animate({
+        scrollTop: distance
+      }, 1400); // Duración de la animación en milisegundos (1 segundo en este caso)
+    });
+  });
