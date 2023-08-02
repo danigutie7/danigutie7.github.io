@@ -105,13 +105,17 @@ body {
 }
 
 .cta {
-    display: inline-block;
+    display: flex;
     background-color: #ce8d1580;
-    justify-self: center;
     color: #fff;
     text-decoration: none;
     padding: 13px 30px;
     border-radius: 32px;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 }
 
 
@@ -150,8 +154,46 @@ body {
     margin: 0 auto;
 }
 
+.contact__cards {
+    display: grid;
+    gap: .5em;
+    justify-items: center;
+    width: 190px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 30px;
+    color: #fff;
+    padding: 20px;
+}
+
+.contact__cards--whatsapp {
+    background: linear-gradient(135deg, #25D366, #128C7E);
+}
+
+.contact__cards--instagram {
+    background: linear-gradient(135deg, #8134AF, #FF497D);
+}
+
+.contact__cards--facebook {
+    background: linear-gradient(135deg, #3b5998, #1877f2);
+}
+
+.contact__main {
+    padding-top: 36px;
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    gap: 4em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+}
+
 .about__icon {
     width: 40px;
+}
+
+.contact__card {
+    width: 70px;
 }
 
 
@@ -396,6 +438,8 @@ body {
     margin: 0 auto;
     margin-bottom: 60px;
 }
+
+
 
 
 /* Footer */
@@ -670,5 +714,11 @@ body {
     .footer__submit {
         margin: 0;
         width: 100%;
+    }
+}
+
+@media (max-width:1120px) {
+    .contact__cards:last-of-type {
+        grid-column: 1/-1;
     }
 }

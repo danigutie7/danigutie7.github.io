@@ -20,6 +20,6 @@ $(document).ready(function() {
       var distance = $(target).offset().top;
       $("html, body").animate({
         scrollTop: distance
-      }, 1400); // Duración de la animación en milisegundos (1 segundo en este caso)
+      }, 1250); // Duración de la animación en milisegundos (1 segundo en este caso)
     });
   });
