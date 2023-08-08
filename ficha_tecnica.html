@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayToWin</title>
+    <link rel="shortcut icon" href="./images/logo_play_to_win.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <meta name="theme-color" content="#2091F9">
+    <meta name="title" content="Torneos de tenis - PlayToWin." />
+    <meta name="description" content="Participa del mejor cicuito de tenis en Colombia. ¡Inscríbete ya!." />
+
+    <!-- Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://playtowin.com" />
+    <meta property="og:title" content="Torneos de tenis - PlayToWin." />
+    <meta property="og:description" content="Participa del mejor cicuito de tenis en Colombia. ¡Inscríbete ya!." />
+    <meta property="og:image" content="https://playtowin.com/images/pagina_web_playtowin.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://playtowin.com" />
+    <meta property="twitter:title" content="Torneos de tenis - PlayToWin." />
+    <meta property="twitter:description" content="Participa del mejor cicuito de tenis en Colombia. ¡Inscríbete ya!." />
+    <meta property="twitter:image" content="https://playtowin.com/images/pagina_web_playtowin.png" />
+
+</head>
+<body>
+
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title" id="tituloPrincipal"><a class="nav__links_otra" href="./index.html#indexInicio">PlayToWin.</a></h2>
+            </div>
+            
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="./index.html#indexInicio" class="nav__links_otra">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="./index.html#sectionKnowledge" class="nav__links_otra">Acerca de</a>
+                </li>
+                <li class="nav__items">
+                    <a href="./index.html#sectionCategorias" class="nav__links_otra">Categorias</a>
+                </li>
+                <li class="nav__items">
+                    <a href="./ficha_tecnica.html" class="nav__links_otra">Ficha Técnica</a>
+                </li>
+                <li class="nav__items">
+                    <a href="./index.html#sectionContacto" class="nav__links_otra">Contacto</a>
+                </li>
+
+                <img src="./images/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="./images/menu.svg" alt="menu" class="nav__img">
+            </div>
+        </nav>
+
+        <section class="hero__container container">
+            <h1 class="hero__title">Ficha Técnica</h1>
+            <p class="hero__paragraph">
+                "Cuando entres a la cancha, lleva contigo la mentalidad de un campeón: Juega para ganar"
+            </p>
+            <a href="#sectionFichaTecnica" class="cta">Revisar</a>
+        </section>
+    </header>
+
+    <main>
+        <section id="sectionFichaTecnica" class="container container__ft about">
+            <h2 class="subtitle__ft">Ficha Técnica PlayToWin Circuit</h2>
+
+            <h3 class="titulos__ft">SISTEMA DE LOS PARTIDOS Y DEL TORNEO.</h3>
+
+            <p class="ft__paragraph">El sistema de los partidos será al mejor de 3 sets, donde cada set se jugará a 6 games con NO-AD, net. 1 iguales en sets, se jugará un tercer set como un match tie-break (10 puntos).</p>
+            
+            <p class="ft__paragraph">El sistema del torneo esta dividido en dos fases, la fase de cuadros clasificación con modalidad de round robin (qualy) y la fase de cuadro principal (main draw).</p>
+            
+            <p class="ft__paragraph">La fase de cuadros de clasificación esta dividida con cuadros de máximo 4 jugadores donde se enfrentan todos contra todos y clasifican los dos mejores a la fase del cuadro principal (main draw), tiene una modalidad en la que da igual si un jugador pierde o gana, podrá jugar un mínimo de 2 partidos y un máximo de 3 partidos. En la fase del cuadro principal el número de rondas será determinada por el número de jugadores clasificados de la qualy, tiene una modalidad de eliminación directa. Donde mínimo cada clasificado jugará un mínimo de 1 partido hasta llegar a la final del torneo.</p>
+
+            <div class="div__rr">
+                <h3 class="titulos__ft2">Sistema de Round Robin:</h3>
+
+                <div class="titulos__ft2--sangria">
+                    <p class="ft__paragraph">
+                        1.  &nbsp;Objetivo: Implementar el sistema de Round Robin en un torneo de tenis, donde cada jugador compite contra todos los demás participantes, permitiendo un alto nivel de enfrentamientos y un cálculo preciso de puntuaciones.
+                    </p>
+                    <p class="ft__paragraph">
+                        2.  &nbsp;Estructura del Sistema: Los jugadores participantes se organizan en grupos, según la cantidad total de jugadores. Cada grupo forma una "categoría" separada dentro del torneo.</p>
+                    <p class="ft__paragraph">
+                        3.  &nbsp;Enfrentamientos: Cada jugador dentro de un grupo se enfrenta a todos los demás jugadores de su mismo grupo en partidos individuales. Esto garantiza que cada participante compita contra todos los demás en la fase de grupos. 
+                    </p>
+                        <p class="ft__paragraph ft__paragraph--br">
+                            -	Primer partido: 1 vs. 4 y 2 vs. 3. <br>
+                            -	Segundo partido: ganadores vs. perdedores. <br>
+                            -	Solo en caso de existir triple empate se jugaría el tercer partido del grupo. <br>
+                        </p>
+                    <p class="ft__paragraph">
+                        4.   &nbsp;Puntuación: Los jugadores ganan puntos por cada victoria. Las puntuaciones se suman a lo largo de los enfrentamientos para determinar a los líderes en cada grupo.
+                    </p>
+                    <p class="ft__paragraph">
+                        5.   &nbsp;Duración: El sistema de Round Robin se lleva a cabo durante un período determinado, con un número específico de rondas, según la cantidad de jugadores y la duración del torneo.
+                    </p>
+                    <p class="ft__paragraph">
+                        6.   &nbsp;Clasificación y Avance: Al finalizar los enfrentamientos del Round Robin, los jugadores se clasifican en función de sus puntuaciones. Los dos mejores clasificados en cada grupo avanzan a las rondas finales o main draw. Para determinar la tabla de posiciones se deben tener en cuenta los siguientes factores:
+                    </p>
+                        <p class="ft__paragraph ft__paragraph--br">
+                            6.1.	&nbsp;Numero de partidos ganados. <br>
+                            6.2.	&nbsp;Porcentaje de sets: Para el cálculo del porcentaje se tendrán en cuenta tanto los sets que se jugaron como los que se ganaron. <br>
+                            6.3.	&nbsp;Porcentaje de games: Para calcular el porcentaje se considerará tanto el número de games  jugados como el número de games ganados. <br>
+                            6.4.	&nbsp;Partido directo: Si continúa el empate entre dos jugadores en una posición crucial dentro del cuadro de clasificación, se tendrán en cuenta los resultados de su partido directo.
+                        </p>
+                    <p class="ft__paragraph">
+                        7.   &nbsp;Equidad y Competencia: El sistema de Round Robin garantiza que cada jugador compita contra todos los demás, lo que proporciona una evaluación justa y precisa de las habilidades individuales en el torneo.
+                    </p>
+                    <p class="ft__paragraph">
+                        8.   &nbsp;Comunicación y Transparencia: Es esencial comunicar el formato del sistema de Round Robin a los jugadores antes del torneo para que comprendan cómo se llevarán a cabo los enfrentamientos y la determinación del campeón.
+                    </p>
+                </div>
+                <p class="ft__paragraph">
+                    Este sistema de Round Robin ofrece una forma equitativa y exhaustiva de competir en un torneo de tenis, permitiendo que cada jugador tenga la oportunidad de enfrentarse a todos los demás y demostrar su destreza en la cancha.
+                </p>
+            </div>
+
+            <div class="div__rr">
+                <h3 class="titulos__ft2">Sistema del cuadro principal:</h3>
+                <div class="titulos__ft2--sangria">
+                    <p class="ft__paragraph">
+                        1.  &nbsp;Objetivo: Establecer el cuadro principal del torneo a partir de un cuadro de clasificación (qualy), permitiendo que los jugadores compitan en diferentes rondas hasta llegar a la final y determinar al campeón.
+                    </p>
+                    <p class="ft__paragraph">
+                        2.  &nbsp;Tamaño del Cuadro Principal: Determinar la cantidad específica de jugadores que participarán en el cuadro principal.</p>
+                    <p class="ft__paragraph">
+                        3.  &nbsp;Clasificación de Jugadores: Utilizar los resultados del cuadro de clasificación previo para seleccionar a los jugadores que avanzarán al cuadro principal. Los jugadores mejor clasificados y con mejor desempeño en la clasificación serán elegibles para competir en esta fase.
+                    </p>
+                    <p class="ft__paragraph">
+                        4.   &nbsp;Estructura del Cuadro: Diseñar un cuadro que organice a los jugadores en enfrentamientos y rondas. El cuadro principal constará de rondas progresivas: primera ronda, segunda ronda, tercera ronda, cuartos de final, semifinales y final.
+                    </p>
+                    <p class="ft__paragraph">
+                        5.   &nbsp;Sorteo o Siembra: Decidir si los jugadores serán sorteados aleatoriamente en el cuadro principal o si se seguirá un sistema de siembra, donde los jugadores mejor clasificados se colocarán estratégicamente para evitar enfrentamientos tempranos.
+                    </p>
+                    <p class="ft__paragraph">
+                        6.   &nbsp;Asignación de Enfrentamientos: Colocar a los jugadores en los enfrentamientos correspondientes, considerando el sorteo o la siembra. Los jugadores mejor clasificados podrían enfrentar a jugadores de menor clasificación en la primera ronda.
+                    </p>
+                    <p class="ft__paragraph">
+                        7.   &nbsp;Avance de Jugadores: A medida que los jugadores ganen sus partidos, avanzarán a las rondas posteriores. Los perdedores serán eliminados del torneo.
+                    </p>
+                    <p class="ft__paragraph">
+                        8.   &nbsp;Progresión de Enfrentamientos: Los enfrentamientos futuros se determinarán en función de los resultados previos. Los jugadores ganadores se enfrentarán a otros ganadores en rondas sucesivas.
+                    </p>
+                    <p class="ft__paragraph">
+                        9.   &nbsp;Llegada a la Final: Los jugadores que continúen ganando avanzarán en el cuadro principal hasta llegar a la final del torneo.
+                    </p>
+                    <p class="ft__paragraph">
+                        10.   &nbsp;Determinación del Campeón: El jugador que triunfe en la final se proclamará campeón del torneo y recibirá el reconocimiento y premio correspondiente.
+                    </p>
+                    <p class="ft__paragraph">
+                        11.   &nbsp;Comunicación y Transparencia: Es fundamental comunicar claramente la estructura y proceso del cuadro principal a todos los jugadores participantes para asegurarse de que estén informados y preparados para competir.
+                    </p>
+                </div>
+                <p class="ft__paragraph">
+                    Esta ficha técnica proporciona una visión concisa y clara de cómo se lleva a cabo la creación del cuadro principal en un torneo de tenis, desde la selección de los jugadores hasta la determinación del campeón.
+                </p>
+            </div>
+
+            <h3 class="titulos__ft">PERIODO DE ESPERA, CANCELACIONES Y WALKOVER.</h3>
+
+            <p class="ft__paragraph">Hemos establecido lo siguiente para cumplir con el cronograma:</p>
+
+            <div class="sangria">
+                <p class="ft__paragraph ft__paragraph--br">
+                    -	Luego de enviados los partidos a la cancha, los jugadores tienen 15 minutos para presentarse, luego de lo cual se aplicará el walkover (WO) correspondiente. <br>
+                    -	No se permiten retiros de la competencia después de que se haya enviado el cronograma. <br>
+                    -	Cuando haya walkover en el primer partido del grupo, solo se aplicará a ese primer partido. Si un jugador pierde su partido final de la fase de clasificación por WO por una causa que no sea una lesión, perderá todos los partidos del grupo correspondiente por walkover. <br>
+                </p>
+            </div>
+
+            <p class="ft__paragraph">
+                * Si el torneo es cancelado o no finaliza por cualquier motivo relacionado con el clima, será reprogramado a consideración de la organización. *
+            </p>
+
+            <h3 class="titulos__ft">PERIODO DE ESPERA, CANCELACIONES Y WALKOVER.</h3>
+
+            <h3 class="titulos__ft2">Tratamiento de datos.</h3>
+
+            <p class="ft__paragraph">
+                Los jugadores que se hayan registrado oficialmente para cualquier evento competitivo de PlayToWin en una de las diversas categorías dan permiso para que la organización PlayToWin y marcas patrocinadoras aliadas usen y manejen sus datos personales. De acuerdo con el marco legal vigente que rige en la república de Colombia.
+            </p>
+
+            <h3 class="titulos__ft2">Utilización de imágenes de jugadores e invitados.</h3>
+
+            <p class="ft__paragraph">
+                La organización PlayToWin dispone de la AUTORIZACIÓN de los jugadores para usar y manejar los derechos de imagen de los participantes e invitados para incluirlos en fotografías, videos e imágenes promocionales en las distintas plataformas digitales y redes sociales tanto de su marca como de las marcas patrocinadoras asociadas.
+            </p>
+
+            <p class="ft__paragraph">
+                Los videos y/o fotos pueden usarse con fines promocionales de los eventos en cuestión y cualquier iteración posterior sin incurrir en ganancias financieras. En ningún caso se utilizará el mencionado material para otra cosa.
+            </p>
+
+            <p class="ft__paragraph">
+                Las imágenes en las que aparecen los jugadores o invitados podrán ser utilizadas en cualquier país del mundo ya que esta autorización no tiene limitaciones en cuanto a dónde pueden ser utilizadas ni por cuánto tiempo pueden serlo, y se considera otorgada por tiempo indefinido.
+            </p>
+
+            <h3 class="titulos__ft2">Tratamiento de datos.</h3>
+
+            <p class="ft__paragraph">
+                Con registro oficial para cualquier evento de la organización PlayToWin. La Organización PlayToWin y sus marcas patrocinadoras afiliadas tienen permitido manejar datos e imágenes, absolviéndolos de cualquier responsabilidad que pueda resultar de esta actividad de manejo y uso de datos e imágenes. Los jugadores participantes y acompañantes han aceptado estas reglas en su totalidad.
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">Circuito PlayToWin.</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="./index.html#indexInicio" class="nav__links_otra">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./index.html#sectionKnowledge" class="nav__links_otra">Acerca de</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./index.html#sectionCategorias" class="nav__links_otra">Categorias</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href=".hero" class="nav__links">Ficha Técnica</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./index.html#sectionContacto" class="nav__links_otra">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <form class="footer__form" action="https://formspree.io/f/moqojnjl" method="POST">
+                <h2 class="footer__newsletter">Registrate para recibir notificaciones de eventos</h2>
+                <div class="footer__inputs">
+                    <input type="email" placeholder="Email:" class="footer__input" name="email">
+                    <input type="submit" value="Registrate" class="footer__submit">
+                </div>
+            </form>
+        </section>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="https://www.instagram.com/playtowin_tennis/" class="footer__icons" target="_blank"><img src="./images/instagram.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons" target="_blank"><img src="./images/youtube.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons" target="_blank"><img src="./images/facebook.svg" class="footer__img"></a>
+            </div>
+
+            <h3 class="footer__copyright">Derechos reservados &copy; PlayToWin</h3>
+        </section>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/menu.js"></script>
+</body>
+</html>
