@@ -212,8 +212,8 @@ body {
     overflow: hidden;
     padding: var(--padding-container-ft);
     background-color: #e5e5f7;
-opacity: 1;
-background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 17px ), repeating-linear-gradient( #d4d4da55, #d4d4da );
+    opacity: 1;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 17px ), repeating-linear-gradient( #d4d4da55, #d4d4da );
 }
 
 .subtitle__ft {
@@ -253,6 +253,23 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e
 
 .div__sangria {
     margin-left: 20px;
+}
+
+.ft__paragraph--form {
+    margin-top: 40px;
+    font-weight: bold;
+    color: var(--color-title);
+}
+
+.form__td {
+    text-decoration: none;
+    font-weight: lighter;
+    color: #1D293F;
+}
+
+.nav__links_otra--lf {
+    font-weight: bold;
+    color: #000;
 }
 
 /* Knowledge */
