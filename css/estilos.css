@@ -259,6 +259,7 @@ body {
     margin-top: 40px;
     font-weight: bold;
     color: var(--color-title);
+    overflow: hidden;
 }
 
 .form__td {
